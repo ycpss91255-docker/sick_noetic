@@ -21,8 +21,8 @@ setup() {
 
 # -------------------- SICK packages --------------------
 
-@test "sick_safetyscanners2 is installed" {
-    run dpkg -l ros-${ROS_DISTRO}-sick-safetyscanners2
+@test "sick_safetyscanners is installed" {
+    run dpkg -l ros-${ROS_DISTRO}-sick-safetyscanners
     assert_success
 }
 
