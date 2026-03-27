@@ -111,7 +111,7 @@ RUN apt-get update && \
         python3-catkin-tools \
         # Application packages
         ros-${ROS_DISTRO}-sick-safetyscanners \
-        &&
+        && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
@@ -200,7 +200,7 @@ ARG USER
 RUN apt-get update && \
     apt-get install -y --no-install-recommends \
         ros-${ROS_DISTRO}-sick-safetyscanners \
-        &&
+        && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
