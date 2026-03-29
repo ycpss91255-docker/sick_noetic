@@ -2,7 +2,7 @@
 
 **38 tests** total.
 
-## test/smoke_test/ros_env.bats
+## test/smoke/ros_env.bats
 
 ### ROS environment (3)
 
@@ -40,7 +40,7 @@
 |------|-------------|
 | `Work directory exists` | `${HOME}/work` directory exists |
 
-## docker_template/test/smoke_test/script_help.bats
+## template/test/smoke/script_help.bats
 
 ### build.sh (3)
 
@@ -83,7 +83,7 @@
 | `build.sh defaults to en for LANG=en_US.UTF-8` | Defaults to English |
 | `build.sh SETUP_LANG overrides LANG` | SETUP_LANG takes priority |
 
-## docker_template/test/smoke_test/display_env.bats
+## template/test/smoke/display_env.bats
 
 ### Wayland env vars (3)
 
