@@ -1,15 +1,22 @@
-**[English](README.md)** | **[繁體中文](doc/README.zh-TW.md)** | **[简体中文](doc/README.zh-CN.md)** | **[日本語](doc/README.ja.md)**
-
 # SICK Safety Scanner Docker Container (ROS 1 Noetic)
 
-> **TL;DR** — Containerized SICK Safety Scanner driver for ROS 1 Noetic. Installs `ros-noetic-sick-safetyscanners2` from apt, runs in privileged mode with `/dev` mounted.
->
-> ```bash
-> ./build.sh && ./run.sh
-> ```
+[![CI](https://github.com/ycpss91255-docker/sick_noetic/actions/workflows/main.yaml/badge.svg)](https://github.com/ycpss91255-docker/sick_noetic/actions/workflows/main.yaml)
+
+**[English](README.md)** | **[繁體中文](doc/README.zh-TW.md)** | **[简体中文](doc/README.zh-CN.md)** | **[日本語](doc/README.ja.md)**
+
+## TL;DR
+
+Containerized SICK Safety Scanner driver for ROS 1 Noetic. Installs `ros-noetic-sick-safetyscanners2` from apt, runs in privileged mode with `/dev` mounted.
+
+```bash
+./build.sh && ./run.sh
+```
+
+---
 
 ## Table of Contents
 
+- [Overview](#overview)
 - [Features](#features)
 - [Quick Start](#quick-start)
 - [Usage](#usage)
@@ -19,6 +26,10 @@
 - [Directory Structure](#directory-structure)
 
 ---
+
+## Overview
+
+Provides a reproducible ROS 1 Noetic environment for SICK Safety Scanner devices. The container installs `ros-noetic-sick-safetyscanners2` from the ROS apt repository and runs in privileged mode with `/dev` mounted so USB / serial / Ethernet devices appear inside the container with no extra wiring. Multi-arch base image supports x86_64 and ARM64 (Raspberry Pi, Jetson CPU mode).
 
 ## Features
 
