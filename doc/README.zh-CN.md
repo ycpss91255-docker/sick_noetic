@@ -2,6 +2,8 @@
 
 # SICK Safety Scanner Docker 容器（ROS 1 Noetic）
 
+[![CI](https://github.com/ycpss91255-docker/sick_noetic/actions/workflows/main.yaml/badge.svg)](https://github.com/ycpss91255-docker/sick_noetic/actions/workflows/main.yaml) [![License](https://img.shields.io/badge/License-Apache--2.0-blue?style=flat-square)](../LICENSE)
+
 > **TL;DR** — 容器化的 SICK Safety Scanner ROS 1 Noetic 驱动程序。通过 apt 安装 `ros-noetic-sick-safetyscanners2`，以 privileged 模式运行并挂载 `/dev`。
 >
 > ```bash
